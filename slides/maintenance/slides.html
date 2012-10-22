@@ -1,0 +1,422 @@
+<html>
+  <head>
+    <title>Writing maintainable code</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Inconsolata' rel='stylesheet' type='text/css' />
+  </head>
+  <body class="impress-not-supported">
+    <div class="io1-logo"><a href="http://io1.biz"><img src="img/io1-logo.png" /></a></div>
+    <div class="dc-logo"><a href="http://drupalcamp.es"><img src="img/dc-logo.png" /></a></div>
+    <div id="impress">
+<!--
+Hi there. Today I'm going to speak about maintenance, and more precisely, about how to write maintainable code. But, before I begin, let me introduce myself.
+-->
+      <div id="slide-1" class="step" data-x="0" data-y="0" data-scale="4">
+        <div class="size-8 bold-text">Writing maintainable</div>
+        <div class="size-8 bold-text">code</div>
+      </div>
+<!--
+I'm David Hernández, a Drupal Developer from Valencia, Spain. I've been working with drupal for the last 3 and a half years with iO1, where now I work as Development manager, being in charge of the code quality, the implementation of new control processes and technologies.
+-->
+      <div id="slide-2" class="step" data-x="550" data-y="850" data-scale="2">
+        <div class="float-left size-5 width-30 bold-text text-centered">
+          Who am I?
+        </div>
+        <div class="float-right size-3 width-70">
+          <ul>
+            <li>David Hern&#225;ndez</li>
+            <li>iO1</li>
+            <li><a href="http://twitter.com/david_baltha">@David_Baltha</a></li>
+            <li><a href="http://davidhernandez.info">davidhernandez.info</a></li>
+          </ul>
+        </div>
+      </div>
+<!--
+Since I begun with that role, I started to learn why is important to write maintainable code. Why it is important?
+-->
+      <div id="slide-3" class="step" data-x="3000" data-y="-200" data-scale="4" data-rotate="-90">
+        <div class="size-6 text-centered">Why is important?</div>
+      </div>
+<!--
+When we write code, we usually take care of the design. For example, in the picture, we can see a well designed building. But design is not enough.
+-->
+      <div id="slide-4" class="step" data-x="4800" data-y="200" data-scale="1.6">
+        <div class="centered">
+          <img src="img/design.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/mayoral/">Mayoral</a>. License <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC by-nc-sa</a>.
+        </div>
+      </div>
+<!--
+We make it accessible and usable.
+
+A museum has a clear objective: showing their pieces of art. It's also accessible, with ramps and big doors for the disabled people. But that's not enough.
+-->
+      <div id="slide-5" class="step" data-x="4800" data-y="1000" data-scale="0.5">
+        <div class="centered">
+          <img src="img/art.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/lifeontheedge/">Marshall Astor</a>. License <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC by-sa</a>.
+        </div>
+      </div>
+<!--
+What happens with the fundations?
+
+The code is our product, the fundations we use to write our applications. If we have a poor base, our building will not survive.
+-->
+      <div id="slide-6" class="step" data-x="2200" data-y="2600" data-rotate="90" data-scale="4">
+        <div class="centered">
+          <img src="img/basement.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/stevemorel/">Steve Morel</a>. License <a href="http://creativecommons.org/licenses/by-nd/2.0/">CC by-nd</a>.</div>
+      </div>
+<!--
+Is not only how fast our car is or how well looks. The real question is, how much time will take to be on the road again if we have a problem?
+
+That's maintenance
+ -->
+      <div id="slide-7" class="step" data-x="2200" data-y="5500" data-rotate="90" data-scale="4">
+        <div class="centered">
+          <img src="img/ferrari.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/pacunar/2277116623/">Pablo Acuña</a>. License <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.es">CC by-nc-sa</a>.</div>
+      </div>
+<!--
+Some people thinks that the maintenance starts with the second line of code you write. Even if you work alone and you don't take care, after a couple months, your old code will look like it was wrote by a complete stranger. We spend a lot of our time working on old code or working with code wrote by others. So...
+-->
+      <div id="slide-8" class="step" data-x="2200" data-y="8500" data-rotate="90" data-scale="4">
+        <div class="centered">
+          <img src="img/stop.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/bambi851/">Bambi851</a>. License <a href="http://creativecommons.org/licenses/by-nd/2.0/">CC by-nd</a>.</div>
+      </div>
+<!--
+What can we do?
+
+We can use clearer names.
+-->
+      <div id="slide-9" class="step" data-x="20000" data-y="20000" data-scale="4">
+        <div class="size-7 bold-text text-centered">What can<br /> we do?</div>
+      </div>
+<!--
+As you can see in the pic, in this card we have sme names that describe some data. Even if we understand it, in a more complex document, it can cause issues of duplication or missunderstanding with other terms.
+-->
+      <div id="slide-10" class="step" data-x="19000" data-y="20500">
+        <div class="size-2">
+          <ul>
+            <li>ID - David Hern&#225;ndez</li>
+            <li>Role - Dev Manager</li>
+            <li>Works for - iO1</li>
+            <li>mail - davidhernandezruiz@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+<!-- 
+This issue is easily fixable using more clear names that avoid the confussion. Sometimes, they will be larger, but we will gain a text more easy to read and understand.
+
+The same is applied to the code: functions, variables, classes... Everything uses a name. Make an effort to use better names and you will get almost the half of the job done.
+-->
+      <div id="slide-11" class="step" data-x="19000" data-y="21000">
+        <div class="size-2">
+          <ul>
+            <li>Name - David Hern&#225;ndez</li>
+            <li>Job role - Dev Manager</li>
+            <li>Company - iO1</li>
+            <li>E-mail - davidhernandezruiz@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+<!--
+Other thing we can do is simplify the functions. There are several ways to do it.
+-->
+      <div id="slide-12" class="step" data-x="20000" data-y="20600">
+        <img src="img/tree.jpg" />
+        <div class="attribution">By <a href="http://www.flickr.com/photos/helenduffett/">Helen Duffet</a>. License <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC by-nc-sa</a>.</div>
+      </div>
+<!--
+Single Responsibility Principle.
+
+Wikipedia defines a function as "a part of source code within a larger computer program that performs a specific task and is relatively independent of the remaining code". A function should do one and only one thing. An object should have have an objective.
+
+If a function does two actions, it can be improved, splitting the function into two different functions.
+
+A condition is an action: it takes a decission. If there is a condition and something else, extract the other part to a different function. A line that is repeated several times in the code, is a good candidate to become a new function.
+-->
+      <div id="slide-13" class="step" data-x="20000" data-y="21200">
+        <div class="size-2">
+          <div>Single Responsibility Principle</div>
+          <div class="size-1 text-bold">SRP</div>
+          <ul>
+            <li>A function does one thing</li>
+            <li>An object has an objective</li>
+          </ul>
+        </div>
+      </div>
+<!--
+Here we have a man trying to do too much things at the same time. Even if the result can be good, there are better ways to do it:
+-->
+      <div id="slide-14" class="step" data-x="20000" data-y="21600">
+        <div class="centered">
+          <img src="img/one-man-band.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/andrewmalone/">Andrew Malone</a>. License <a href="http://creativecommons.org/licenses/by/2.0/">CC by</a>.</div>
+      </div>
+<!--
+
+-->
+      <div id="slide-15" class="step" data-x="20000" data-y="22100">
+        <div class="centered">
+          <img src="img/star-wars.png"/>
+        </div>
+      </div>
+      <!--
+Don't repeat yourself!
+
+Try to avoid duplication in your code. If you have two lines of code that repeat themselves in different functions, try to extract it to a function.
+-->
+      <div id="slide-16" class="step" data-x="20000" data-y="22600">
+        <div class="size-2">Don't repeat yourself</div>
+        <div class="size-3 text-bold">DRY</div>
+      </div>
+<!--
+  - Keep it simple!
+
+  - A function that is too long is probably doing more than one thing. A function with more than 20 lines of code is a signal of that your code is doing multiple actions and can be simplified.
+
+  - A function with complex code, usually can be splitted into different function, making it easier to read.
+-->
+      <div id="slide-17" class="step" data-x="20000" data-y="22800">
+        <div class="size-2">Keep it simple, [stupid]</div>
+        <div class="size-3 text-bold">KISS</div>
+      </div>
+<!--
+Let's put what we have seen together: Better names combined with better functions, give us a code that look less like code and more like text. Making it easier to read, to debug and understand.
+-->
+      <div id="slide-18" class="step" data-x="20000" data-y="23000">
+        <div class="size-3">Better names</div>
+        <br />
+        <br />
+        <br />
+        <div class="size-3">+ Simpler functions</div>
+      </div>
+      <!--
+Changing to a different topic. Having a lot of directions, not always is a good idea. They can confuse more than really helping (even more if they are in chinese!). This time I'm talking about the comments.
+-->
+      <div id="slide-19" class="step" data-x="21000" data-y="20500">
+        <img src="img/confusingtrafficsigns.jpg" />
+        <img src="img/Confusing-Traffic-Signs.jpg" />
+      </div>
+<!--
+If there is a comment above the function, probably the name or the function can be improved.
+
+If there is a comment inside a function, means that the code can be simplified.
+-->
+      <div id="slide-20" class="step" data-x="21000" data-y="21200">
+        <div class="size-2">If there is a comment in a function</div>
+        <br />
+        <br />
+        <br />
+        <div class="size-2">the function can be simplified</div>
+      </div>
+<!--
+If there is a comment above the definition of a variable, means that the name can be improved.
+-->
+      <div id="slide-21" class="step" data-x="21000" data-y="21400">
+        <div class="size-2">If there is a comment above a variable</div>
+        <br />
+        <br />
+        <br />
+        <div class="size-2">The variable name can be improved</div>
+      </div>
+<!--
+Other problem that usually comes with the comments is, that the code evolve but the comments don't. When we are fixing something in the code, we fix the code without changing the comment. At the end, we have a comment that doesn't go with the code anymore.
+
+Also happens that we use comments to remove temporarily part of the code. Don't do it. We have version control for that. The chances that you leave that code commented there are high and someday, someone will find that code and will not be sure of leaving it there or removing it.
+
+I've seen code with more commented code than actual working code.
+
+Even if the comments can be useful sometimes, normally, when we see a comment, it means that something...
+-->
+      <div id="slide-22" class="step" data-x="21000" data-y="21600">
+        <div class="size-3">Code evolves</div>
+        <br />
+        <img src="img/evolution.jpg" />
+        <br />
+        <div class="size-3">Comments don't</div>
+      </div>
+<!--
+If there are a lot of comments...
+-->
+      <div id="slide-23" class="step" data-x="21000" data-y="22000">
+        <div class="size-5">If there are a lot of comments...</div>
+      </div>
+<!--
+Something smells!
+-->
+      <div id="slide-24" class="step" data-x="21000" data-y="22400">
+        <div class="centered">
+          <img src="img/poo.jpg"/>
+        </div>
+        <div class="attribution">By <a href="http://www.flickr.com/photos/inessaraiva/">Ines Saraiva</a>. License <a href="http://creativecommons.org/licenses/by-nc/2.0/">CC by-nc</a>.
+        </div>
+      </div>
+
+      <!--
+We have seen the biggest changes, but that's not all. We are missing a lot of details. They can be little, but they help more than we expect. The problem is, they are the most hard to fix, because there is no common solution.
+-->
+      <div id="formatting" class="step" data-x="21000" data-y="23300" data-rotate="-90">
+        <div class="size-2">The devil is in the details</div>
+        <br />
+        <br />
+        <img src="img/devil.jpg" />
+        <br />
+        <br />
+        <div class="attribution">By <a href="http://www.flickr.com/photos/malzor/">Malzor905</a>. License <a href="http://creativecommons.org/licenses/by-nc/2.0/">CC by-nc</a>.</div>
+      </div>
+<!--
+There are some eternal discussions: Camel Case VS Hungarian Notation, Tabs VS Spaces, Windows VS Linux VS OSX, Panels VS Context, Eclipse VS Netbeans, VIM VS Nano...
+
+How can I choose? All of them (unless windows, of course) can be good depending on the situation. Each person on the team can have a different opinion.
+-->
+      <div id="slide-26" class="step" data-x="21500" data-y="23300" data-rotate="-90">
+        <div class="size-3">
+          <ul>
+            <li>Camel case VS Hungarian Notation</li>
+            <li>Tabs VS Spaces</li>
+            <li>Windows VS Linux</li>
+          </ul>
+        </div>
+      </div>
+<!--
+Fortunately, Drupal has his own standard that can help us with a great tool for ensuring that we are following: Coder is an impressive tool.
+
+For the rest, I suggest you to use the standards of each technology. When the standard is not clear, discuss it with your team and try to obtain an agreement with them. If that fails, you will have to take a decission.
+
+Is better to take a decission on time than waiting eternally until a discussion ends.
+-->
+      <div id="slide-27" class="step" data-x="21800" data-y="23300" data-rotate="-90">
+        <div class="size-3">
+          <ul>
+            <li>Use the standards</li>
+            <li>Agreements with the team</li>
+            <li>Take decissions</li>
+          </ul>
+        </div>
+      </div>
+      <!--
+In order to improve the code more and more and to get better at writing maintainable code, we need to write code. Lots and lots of code.
+-->
+      <div id="advices" class="step" data-x="22300" data-y="23300" data-rotate="-180">
+        <div class="size-8">Last advices</div>
+      </div>
+<!--
+Refactor! Get used to re-write your own code. The code of a different developer of your team, rewrite a patch from the issue queue. If you think something can be improve it, spend sometime in writing it in a better way.
+
+If you work with an issue system, spend one-fifth of the time you have used on the issue on refactoring your code. If you use pomodoros to write code, put some refactoring pomodoros in the middle. If you do pair programming, before writing a new test, do some refactoring of the code your partner wrote.
+-->
+      <div id="slide-29" class="step" data-x="22300" data-y="22800" data-rotate="-180">
+        <div class="size-8">Refactor</div>
+      </div>
+<!--
+Follow this rule. Always leave the code a bit better than you find it. If the varialbe name you wrote before doesn't fit anymore, change it!
+
+You will not get the best code on the first try.
+-->
+      <div id="slide-30" class="step" data-x="22300" data-y="22400" data-rotate="-180">
+        <div class="size-3"><em>"Always leave the campground better than you find it"</em></div>
+        <div class="size-2 text-right"> - Boy scout rule</div>
+      </div>
+<!--
+Testing is important. It help us keep the code stable and check that we haven't break anything when we do a change. But not only that, well designed tests can help to make the code easier.
+
+If you want to find how something is done in your code, you run the test for it. Then, you can follow the code of the test to the part of the code that is actually doing it.
+
+Doing some testing techniques as TDD or BDD help to make a better design of our code from the begining, also doing a bigger and better web of tests to cover our code.
+
+If you are interested in this, tomorrow there is a workshop about TDD and BDD with Symfony 2. Check the website!
+-->
+      <div id="slide-31" class="step" data-x="22300" data-y="22000" data-rotate="-180">
+        <div class="size-8">Testing</div>
+      </div>
+<!--
+Version control is also really important, it help us to keep all the code in one place, making it easier with the rest of the team. But is not only about push and pulls. We also need to decide how our we will do our branching, when and where we have to do our commits...
+-->
+      <div id="slide-32" class="step" data-x="22300" data-y="21600" data-rotate="-180">
+        <div class="size-8">Version control</div>
+      </div>
+<!--
+There are a lot of tools that can help us with all of this. Coder will help us to make sure that we are following the Drupal Code Standards.
+-->
+      <div id="slide-33" class="step" data-x="22300" data-y="21200" data-rotate="-180">
+        <div class="size-8">Tools</div>
+      </div>
+<!--
+A code sniffer connected to your version control system will ensure that the standards are followed by everybody.
+-->
+      <div id="slide-34" class="step" data-x="22300" data-y="20800" data-rotate="-180">
+        <div class="size-8">Code Sniffer</div>
+      </div>
+<!--
+Having a good continuous integration system, will help our developers to work in a more confortable enviroment.
+
+If you are interested in this topic, tomorrow there is a session about Continuous integration, in this room, first thing in the morning.
+-->
+      <div id="slide-35" class="step" data-x="22300" data-y="20400" data-rotate="-180">
+        <div class="size-8">Continuous integration</div>
+      </div>
+<!--
+Sonar is a tool for evaluating the source code. It checks the duplicated code, the standards we have defined, the unit testing, the quantity of comments, cyclomatic complexity...
+
+But, remember, that no rule is absolute, so...
+-->
+      <div id="slide-36" class="step" data-x="22300" data-y="20000" data-rotate="-180">
+        <div class="size-8">Sonar</div>
+      </div>
+<!--
+Use the metrics you have as a guide, not as a rule.
+-->
+      <div id="slide-37" class="step" data-x="22300" data-y="19600" data-rotate="-180">
+        <div class="size-6">Metrics as a guide,<br />not as a rule</div>
+      </div>
+<!--
+As a quick overview, we can summarize all this session in three simple ideas: Simple, Readable and common for all the team.
+-->
+      <div id="slide-38" class="step" data-x="30000" data-y="30000">
+        <div class="size-8">Overview</div>
+      </div>
+<!--
+Any questions?
+-->
+      <div id="ending" class="step" data-x="40000" data-y="40000" data-rotate-y="90">
+        <div class="size-8">Questions</div>
+        <div class="size-10 text-centered text-bold">?</div>
+      </div>
+<!--
+If you are interested in this topic, I suggest you this book, the bible about writing maintainable code.
+-->
+      <div id="slide-40" class="step" data-x="50000" data-y="50000" data-rotate-y="90">
+        <div class="size-5">Recommended readings</div>
+        <div class="clean-code"><img src="img/cleancode.jpg" /></div>
+        <p>License of the <a href="http://creativecommons.org/licenses/by-nc/2.0/">CC by-nc</a></p>
+      </div>
+<!--
+If you want to review this session, you can download the slides from this link. The HTML code of the slide contain the script with all the details.
+-->
+      <div id="slide-41" class="step" data-x="60000" data-y="60000"  data-rotate-y="180">
+        <div class="size-3"><a href="http://davidhernandez.info/slides">davidhernandez.info/slides</a></div>
+        <br />
+        <br />
+        <div class="size-3"><a href="http://drupalcamp.es/sesiones/writing-maintainable-code-90">DrupalCamp website</a></div>
+      </div>
+<!--
+I hope you have enjoyed the session and you have learn something. Thanks and see you around!
+-->
+      <div id="thanks" class="step" data-x="60000" data-y="60000" data-rotate-y="270">
+        <div class="size-10">Thanks!</div>
+      </div>
+    <!-- End of impress div -->
+    </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
