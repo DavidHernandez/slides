@@ -11,7 +11,7 @@ body {
 
 iframe {
   width: 100%;
-  height: 120%;
+  min-height: 480px;
 }
 
 .impress-on-slide-0,
@@ -26,13 +26,17 @@ iframe {
   color: #FFFFFF;
 }
 
+.impress-on-slide-65,
 .impress-on-slide-66,
 .impress-on-slide-67,
 .impress-on-slide-68,
-.impress-on-slide-69 {
+.impress-on-slide-69,
+.impress-on-slide-70,
+.impress-on-slide-71,
+.impress-on-slide-72 {
+  color: #FFFFFF;
   background: #069;
 }
-
 
 .centered {
   text-align: center;
@@ -40,16 +44,26 @@ iframe {
 
 .title {
   text-align: center;
+  min-height: 100px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  line-height: 80px;
+}
+
+.container {
+  line-height: 50px;
+  min-height: 480px;
 }
 
 .content {
-  height: 50%;
-  line-height: 50px
+  width: 90%;
+  position: absolute;
+  overflow: hidden;
 }
 
 .full-slide {
   width: 100%;
-  height: 100%;
+  min-height: 50%;
 }
 
 .pic {
@@ -61,11 +75,15 @@ iframe {
 }
 
 .on-bottom {
-  top: 30%;
+  top: 60%;
 }
 
 .on-top {
-  top: -30%;
+  top: 0%;
+}
+
+.on-mid {
+  top: 20%;
 }
 
 .on-left {
@@ -82,29 +100,30 @@ iframe {
 }
 
 .a-quarter {
-  top: -45%;
+  top: -20%;
 }
 
 .two-quarters {
-  top: -15%;
+  top: 10%;
 }
 
 .three-quarters {
-  top: 15%;
+  top: 40%;
 }
 
 .four-quarters {
-  top: 45%;
+  top: 70%;
 }
 
 .small-font {
   font-size: 0.7em;
 }
 
-#slide-29 .content {
-  height: 65%;
-}
-
 .sample .title {
   top: -20px;
+}
+
+.data-list {
+  margin-top: 50px;
+  margin-left: 30%
 }
