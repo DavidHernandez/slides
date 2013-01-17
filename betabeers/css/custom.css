@@ -26,6 +26,54 @@ iframe {
   color: #FFFFFF;
 }
 
+.impress-on-slide-80,
+.impress-on-slide-81 {
+  background: rgb(192, 192, 192);
+  color: #FFFFFF;
+}
+
+.impress-on-slide-82,
+.impress-on-slide-83,
+.impress-on-slide-84,
+.impress-on-slide-85,
+.impress-on-slide-86,
+.impress-on-slide-87,
+.impress-on-slide-88,
+.impress-on-slide-89,
+.impress-on-slide-90,
+.impress-on-slide-91,
+.impress-on-slide-92,
+.impress-on-slide-93,
+.impress-on-slide-94,
+.impress-on-slide-95,
+.impress-on-slide-96 {
+  background: rgb(158, 235, 158);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(100, 204, 102)), to(rgb(158, 235, 158)));
+  background: -webkit-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: -moz-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: -ms-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: -o-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  color: #FFFFFF;
+}
+
+.impress-on-slide-73,
+.impress-on-slide-74,
+.impress-on-slide-75,
+.impress-on-slide-76,
+.impress-on-slide-77,
+.impress-on-slide-78,
+.impress-on-slide-79 {
+  background: rgb(204, 0, 0);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 153, 153)), to(rgb(204, 0, 0)));
+  background: -webkit-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: -moz-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: -ms-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: -o-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+}
+
+
 .impress-on-slide-65,
 .impress-on-slide-66,
 .impress-on-slide-67,
