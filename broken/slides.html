@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Drupal está roto</title>
+    <meta charset="utf-8">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Inconsolata' rel='stylesheet' type='text/css' />
+  </head>
+  <body class="impress-not-supported drupal-background">
+    <div class="fallback-message">Parece que tu navegador no soporta una presentaci&oacute;n tan chula como esta. &#161;Actual&iacute;zate!</div>
+    <div class="first-logo"><a href="http://io1.biz"><img src="img/io1-logo.png" /></a></div>
+    <div class="second-logo"><a href="http://2013.drupalcamp.es"><img src="img/camp-logo.png" /></a></div>
+    <div id="impress">
+      <div id="slide-0" class="step" data-x="0" data-y="0">
+        <div class="container">
+          <div class="content on-top">
+            <div class="title">Mi Drupal está roto</div>
+            <img src="img/firetruck.png" />
+          </div>
+        </div>
+      </div>
+      <div id="slide-1" class="step" data-x="0" data-y="0">
+        <img class="centered" src="img/broken-druplicon.png" />
+      </div>
+      <div id="slide-2" class="step" data-x="0" data-y="0">
+        <img class="centered" src="img/druplicon.png" />
+      </div>
+      <div id="slide-3" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content a-quarter">
+            <div class="pic left"><img src="img/me.jpeg" /></div>
+            <div class="name right">David Hern&#225;ndez</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-4" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content two-quarters">
+            <div class="pic left"><img src="img/io1-logo.png" /></div>
+            <div class="right">Senior Developer en iO1</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-5" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content three-quarters">
+            <div class="pic left"><img src="img/drupalval.png" /></div>
+            <div class="right">Organizador de Drupal Valencia</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-6" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content four-quarters">
+            <div class="pic left"><img src="img/aed.png" /></div>
+            <div class="right">Presidente de la AED</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-7" class="step" data-x="0" data-y="2000">
+        <div class="container">
+          <img class="centered" src="img/warning.png" />
+        </div>
+      </div>
+      <div id="slide-8" class="step" data-x="0" data-y="3000">
+        <div class="container">
+          <img class="centered" src="img/smokey.png" />
+        </div>
+      </div>
+      <div id="slide-105" class="step" data-x="0" data-y="59000">
+        <div class="container">
+          <div class="content on-top">
+            <div class="title">&#161;Gracias!</div>
+            <div><a href="http://davidhernandez.info/slides">davidhernandez.info/slides</a></div>
+            <div><a href="http://github.com/DavidHernandez/slides">github.com/DavidHernandez/slides</a></div>
+          </div>
+        </div>
+      </div>
+    <!-- End of impress div -->
+    </div>
+
+    <div class="hint">
+      <p>Usa la barra espaciadora o las flechas para navegar</p>
+    </div>
+    <script>
+      if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+    <!-- controldeck.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/controldeck-slides.js"></script>
+  </body>
+</html>
