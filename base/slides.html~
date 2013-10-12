@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SESSION TITLE</title>
+    <meta charset="utf-8">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Inconsolata' rel='stylesheet' type='text/css' />
+  </head>
+  <body class="impress-not-supported drupal-background">
+    <div class="fallback-message">Looks like your browser doesn't support a presentation as cool as this one. Get an update!</div>
+    <div class="first-logo"><a href="http://davidhernandez.info"><img src="img/company-logo.png" /></a></div>
+    <div class="second-logo"><a href="http://davidhernandez.info"><img src="img/event-logo.png" /></a></div>
+    <div id="impress">
+      <!-- This is a title slide -->
+      <div id="slide-0" class="step" data-x="0" data-y="0">
+        <div class="container">
+          <div class="content on-top centered">
+            <div class="main-title">TITLE</div>
+          </div>
+        </div>
+      </div>
+      <!-- This is a slide with a big image -->
+      <div id="slide-1" class="step" data-x="0" data-y="0">
+        <div class="container">
+          <div class="centered">
+            <img src="img/image-slide.png" />
+          </div>
+        </div>
+      </div>
+      <!-- The next 4 slides are the presentation of the speaker -->
+      <div id="slide-3" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content a-quarter">
+            <div class="pic left"><img src="img/me.jpeg" /></div>
+            <div class="name right">David Hernández</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-4" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content two-quarters">
+            <div class="pic left"><img src="img/io1-logo.png" /></div>
+            <div class="right">Senior Developer in iO1</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-5" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content three-quarters">
+            <div class="pic left"><img src="img/drupalval.png" /></div>
+            <div class="right">Organizer of Drupal Valencia</div>
+          </div>
+        </div>
+      </div>
+      <div id="slide-6" class="step" data-x="0" data-y="1000">
+        <div class="container">
+          <div class="content four-quarters">
+            <div class="pic left"><img src="img/aed.png" /></div>
+            <div class="right">President of the AED</div>
+          </div>
+        </div>
+      </div>
+      <!-- This is the last slide -->
+      <div id="slide-105" class="step" data-x="0" data-y="59000">
+        <div class="container">
+          <div class="content on-top centered">
+            <div class="main-title">&#161;Thanks!</div>
+            <div><a href="http://davidhernandez.info/slides">davidhernandez.info/slides</a></div>
+            <div><a href="http://github.com/DavidHernandez/slides">github.com/DavidHernandez/slides</a></div>
+          </div>
+        </div>
+      </div>
+    <!-- End of impress div -->
+    </div>
+
+    <div class="hint">
+      <p>Use the space bar or the arrow keys to browse the presentation</p>
+    </div>
+    <script>
+      if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+    <!-- controldeck.js -->
+    <!-- Control Deck is a library that works with a NodeJS server -->
+    <!-- It allows you to use any device with a browser as remote controller of the presentation -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/controldeck-slides.js"></script>
+  </body>
+</html>
