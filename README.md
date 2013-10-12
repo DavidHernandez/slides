@@ -18,7 +18,7 @@ This is the base I use for my presentations and I improve it with each new versi
 
 ## License ##
 
-I'm not the author of the Impress.js library. All the credit to (Bartek Szopka)[https://github.com/bartaz]
+I'm not the author of the Impress.js library. All the credit to [Bartek Szopka](https://github.com/bartaz)
 
 Impress.js is released under the MIT and GPL (version 2 or later) Licenses.
 
