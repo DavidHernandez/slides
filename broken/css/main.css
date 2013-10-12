@@ -131,6 +131,11 @@ body {
   line-height: 1.5;
 }
 
+iframe {
+  width: 100%;
+  min-height: 480px;
+}
+
 .step {
   position: relative;
   min-width: 900px;
@@ -142,14 +147,7 @@ body {
   opacity: 0;
 }
 
-.second-logo {
-  position: fixed;
-  left: auto;
-  right: 10px;
-  bottom: 10px;
-  z-index: -100;
-}
-
+/* Company logo*/
 .first-logo {
   position: fixed;
   left: 10px;
@@ -158,11 +156,36 @@ body {
   z-index: -100;
 }
 
+/* Event logo */
+.second-logo {
+  position: fixed;
+  left: auto;
+  right: 10px;
+  bottom: 10px;
+  z-index: -100;
+}
+
+.relative {
+  position: relative;
+}
+
+/* TEXT SIZES */
+.main-title {
+  font-size: 4em;
+  line-height: 200px;
+  font-weight: bold;
+}
+
 .title {
   font-size: 2em;
   line-height: 72px;
 }
 
+.small-text {
+  font-size: 0.7em;
+}
+
+/* TEXT ALIGNS */
 .left {
   float: left;
 }
@@ -171,6 +194,121 @@ body {
   float: right;
 }
 
-.relative {
-  position: relative;
+.centered {
+  text-align: center;
+}
+
+/* TEXT POSITIONS */
+.on-top {
+  top: 0%;
+}
+
+.on-bottom {
+  top: 60%;
+}
+
+.on-mid {
+  top: 20%;
+}
+
+.on-left {
+  left: 10%;
+}
+
+.on-right {
+  right: 10%;
+  text-align: right;
+}
+
+.on-max-top {
+  top: -60%;
+}
+
+/* Text in four rows */
+.a-quarter {
+  top: -20%;
+}
+
+.two-quarters {
+  top: 10%;
+}
+
+.three-quarters {
+  top: 40%;
+}
+
+.four-quarters {
+  top: 70%;
+}
+
+.title {
+  text-align: center;
+  min-height: 100px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  line-height: 80px;
+}
+
+.container {
+  line-height: 50px;
+  min-height: 480px;
+}
+
+.content {
+  width: 90%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.full-slide {
+  width: 100%;
+  min-height: 50%;
+}
+
+.pic {
+  left: 10%;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+/* BACKGROUND COLORS */
+/* Copy it to the custom.css replacing the class with the slide number */
+/* Sample: .impress-on-slide-0 */
+.red-gradient {
+  background: rgb(204, 0, 0);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 153, 153)), to(rgb(204, 0, 0)));
+  background: -webkit-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: -moz-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: -ms-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: -o-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+  background: radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+}
+
+.green-gradient {
+  background: rgb(158, 235, 158);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(100, 204, 102)), to(rgb(158, 235, 158)));
+  background: -webkit-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: -moz-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: -ms-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: -o-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  background: radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  color: #FFFFFF;
+}
+
+.blue-gradient {
+  background: rgb(00, 119, 192);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(129, 206, 255)), to(rgb(00, 119, 192)));
+  background: -webkit-radial-gradient(rgb(129, 206, 255), rgb(00, 119, 192));
+  background: -moz-radial-gradient(rgb(129, 206, 255), rgb(00, 119, 192));
+  background: -ms-radial-gradient(rgb(129, 206, 255), rgb(00, 119, 192));
+  background: -o-radial-gradient(rgb(129, 206, 255), rgb(00, 119, 192));
+  background: radial-gradient(rgb(129, 206, 255), rgb(00, 119, 192));
+  color: #FFFFFF;
+}
+
+.plain-blue {
+  color: #FFFFFF;
+  background: #069;
 }

@@ -14,7 +14,7 @@ Find more about it [here](http://bartaz.github.io/impress.js)
 
 ## Base template ##
 
-This is the base I use for my presentations and I improve it with each new version. Feel free to use it for your own presentations.
+This is the base I use for my presentations and I improve it with each new talk I do. Feel free to use it for your own presentations. Pull requests are welcome!
 
 ## License ##
 

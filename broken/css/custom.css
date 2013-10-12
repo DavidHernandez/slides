@@ -9,11 +9,6 @@ body {
   background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));    
 }
 
-iframe {
-  width: 100%;
-  min-height: 480px;
-}
-
 // ROJO
 .impress-on-slide-0 {
   background: rgb(204, 0, 0);
@@ -38,7 +33,7 @@ iframe {
   color: #FFFFFF;
 }
 
-// VERDE?
+// VERDE
 .impress-on-slide-82 {
   background: rgb(158, 235, 158);
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(100, 204, 102)), to(rgb(158, 235, 158)));
@@ -54,87 +49,6 @@ iframe {
 .impress-on-slide-65 {
   color: #FFFFFF;
   background: #069;
-}
-
-.centered {
-  text-align: center;
-}
-
-.title {
-  text-align: center;
-  min-height: 100px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  line-height: 80px;
-}
-
-.container {
-  line-height: 50px;
-  min-height: 480px;
-}
-
-.content {
-  width: 90%;
-  position: absolute;
-  overflow: hidden;
-}
-
-.full-slide {
-  width: 100%;
-  min-height: 50%;
-}
-
-.pic {
-  left: 10%;
-}
-
-.name {
-  font-size: 1.5em;
-}
-
-.on-bottom {
-  top: 60%;
-}
-
-.on-top {
-  top: 0%;
-}
-
-.on-mid {
-  top: 20%;
-}
-
-.on-left {
-  left: 10%;
-}
-
-.on-right {
-  right: 10%;
-  text-align: right;
-}
-
-.on-max-top {
-  top: -60%;
-}
-
-.a-quarter {
-  top: -20%;
-}
-
-.two-quarters {
-  top: 10%;
-}
-
-.three-quarters {
-  top: 40%;
-}
-
-.four-quarters {
-  top: 70%;
-}
-
-.small-font {
-  font-size: 0.7em;
 }
 
 .sample .title {
