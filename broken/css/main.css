@@ -143,11 +143,12 @@ iframe {
   margin: 20px auto;
 }
 
+/* Hide the next slides. */
 .future {
   opacity: 0;
 }
 
-/* Company logo*/
+/* Company logo */
 .first-logo {
   position: fixed;
   left: 10px;
@@ -176,13 +177,27 @@ iframe {
   font-weight: bold;
 }
 
+.bold-title {
+  font-size: 2em;
+  line-height: 100px;
+  font-weight: bold;
+}
+
 .title {
   font-size: 2em;
   line-height: 72px;
 }
 
+.big-text {
+  font-size: 1.5em;
+}
+
+.normal-text {
+  font-size: 1em;
+}
+
 .small-text {
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 
 /* TEXT ALIGNS */
@@ -208,7 +223,7 @@ iframe {
 }
 
 .on-mid {
-  top: 20%;
+  top: 30%;
 }
 
 .on-left {
@@ -227,18 +242,22 @@ iframe {
 /* Text in four rows */
 .a-quarter {
   top: -20%;
+  position: relative;
 }
 
 .two-quarters {
   top: 10%;
+  position: relative;
 }
 
 .three-quarters {
   top: 40%;
+  position: relative;
 }
 
 .four-quarters {
   top: 70%;
+  position: relative;
 }
 
 .title {
@@ -267,10 +286,6 @@ iframe {
 
 .pic {
   left: 10%;
-}
-
-.name {
-  font-size: 1.5em;
 }
 
 /* BACKGROUND COLORS */
