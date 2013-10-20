@@ -12,7 +12,38 @@ body {
 /* ROJO */
 .impress-on-intro,
 .impress-on-intro-0,
-.impress-on-intro-1 {
+.impress-on-intro-1,
+.impress-on-mucho,
+.impress-on-mucho-1,
+.impress-on-mucho-2,
+.impress-on-mucho-3,
+.impress-on-mucho-4,
+.impress-on-mucho-5,
+.impress-on-mucho-6,
+.impress-on-mucho-7,
+.impress-on-mucho-8,
+.impress-on-mucho-9,
+.impress-on-mucho-10,
+.impress-on-mucho-11,
+.impress-on-mucho-12,
+.impress-on-mucho-13,
+.impress-on-mucho-14,
+.impress-on-mucho-15,
+.impress-on-mucho-16,
+.impress-on-mucho-17,
+.impress-on-mucho-18,
+.impress-on-mucho-19,
+.impress-on-mucho-20,
+.impress-on-mucho-21,
+.impress-on-mucho-22,
+.impress-on-mucho-23,
+.impress-on-mucho-24,
+.impress-on-mucho-25,
+.impress-on-mucho-26,
+.impress-on-mucho-27,
+.impress-on-mucho-28,
+.impress-on-mucho-29,
+.impress-on-mucho-30 {
   background: rgb(204, 0, 0);
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 153, 153)), to(rgb(204, 0, 0)));
   background: -webkit-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
@@ -45,6 +76,69 @@ body {
   background: -ms-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
   background: -o-radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
   background: radial-gradient(rgb(100, 204, 102), rgb(158, 235, 158));
+  color: #FFFFFF;
+}
+
+/* AMARILLO */
+.impress-on-warning,
+.impress-on-poco,
+.impress-on-poco-1,
+.impress-on-poco-2,
+.impress-on-poco-3,
+.impress-on-poco-4,
+.impress-on-poco-5,
+.impress-on-poco-6,
+.impress-on-poco-7,
+.impress-on-poco-8,
+.impress-on-poco-9,
+.impress-on-poco-10,
+.impress-on-poco-11,
+.impress-on-poco-12,
+.impress-on-poco-13,
+.impress-on-poco-14,
+.impress-on-poco-15,
+.impress-on-poco-16,
+.impress-on-poco-17 {
+  background: rgb(245, 238, 111);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(247, 244, 188)), to(rgb(245, 238, 111)));
+  background: -webkit-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: -moz-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: -ms-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: -o-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: radial-gradient(rgb(247, 244, 1882), rgb(245, 238, 111));
+  color: #000000;
+}
+
+.impress-on-bastante,
+.impress-on-bastante-1,
+.impress-on-bastante-2,
+.impress-on-bastante-3,
+.impress-on-bastante-4,
+.impress-on-bastante-5,
+.impress-on-bastante-6,
+.impress-on-bastante-7,
+.impress-on-bastante-8,
+.impress-on-bastante-9,
+.impress-on-bastante-10,
+.impress-on-bastante-11,
+.impress-on-bastante-12,
+.impress-on-bastante-13,
+.impress-on-bastante-14,
+.impress-on-bastante-15,
+.impress-on-bastante-16,
+.impress-on-bastante-17,
+.impress-on-bastante-18,
+.impress-on-bastante-19,
+.impress-on-bastante-20,
+.impress-on-bastante-21,
+.impress-on-bastante-22 {
+  background: rgb(245, 171, 111);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(242, 210, 184)), to(rgb(245, 171, 111)));
+  background: -webkit-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: -moz-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: -ms-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: -o-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
   color: #FFFFFF;
 }
 

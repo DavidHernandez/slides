@@ -106,7 +106,7 @@ table {
   display: block;
 }
 
-.impress-on-slide-1 .hint {
+.impress-on-intro .hint {
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform:    translateY(0px);
@@ -190,6 +190,7 @@ iframe {
 
 .big-text {
   font-size: 1.5em;
+  line-height: 72px;
 }
 
 .normal-text {
@@ -299,6 +300,28 @@ iframe {
   background: -ms-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
   background: -o-radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
   background: radial-gradient(rgb(255, 153, 153), rgb(204, 0, 0));
+}
+
+.yellow-gradient {
+  background: rgb(245, 238, 111);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(247, 244, 188)), to(rgb(245, 238, 111)));
+  background: -webkit-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: -moz-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: -ms-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: -o-radial-gradient(rgb(247, 244, 188), rgb(245, 238, 111));
+  background: radial-gradient(rgb(247, 244, 1882), rgb(245, 238, 111));
+  color: #FFFFFF;
+}
+
+.orange-gradient {
+  background: rgb(245, 171, 111);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(242, 210, 184)), to(rgb(245, 171, 111)));
+  background: -webkit-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: -moz-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: -ms-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: -o-radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  background: radial-gradient(rgb(242, 210, 184), rgb(245, 171, 111));
+  color: #FFFFFF;
 }
 
 .green-gradient {
