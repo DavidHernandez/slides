@@ -201,6 +201,16 @@ iframe {
   font-size: 0.5em;
 }
 
+/* SPECIAL TEXTS */
+
+.module {
+  color: #2f0ba5;
+}
+
+.bold {
+  font-weight:bold;
+}
+
 /* TEXT ALIGNS */
 .left {
   float: left;
